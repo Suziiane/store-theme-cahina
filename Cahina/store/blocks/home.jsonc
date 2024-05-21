@@ -1,0 +1,82 @@
+{
+  "store.home": { 
+    "blocks": [
+      "rich-text", "info-card#botaodireita", "slider-layout#home", "info-card#botaoesquerda", "flex-layout.row", "flex-layout.col"
+    ]
+  },
+
+  "rich-text": { 
+    "props": { 
+      "text": "Aula 1: Rich Text \n [Cahina Store Framework](https://developers.vtex.com/docs/apps/vtex.rich-text)",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1",
+      "textColor": "c-on-dark-pink"
+    }
+  },
+  "info-card#botaodireita": {
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-rosa-min.png",
+      "headline": "Aula 2: Info card",
+      "subhead": "Documentação abaixo",
+      "callToActionMode": "button",
+      "callToActionText": "Documentação VTEX Developers",
+      "callToActionUrl": "https://developers.vtex.com/docs/apps/vtex.store-components/infocard",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#botaoesquerda": {
+    "props": {
+    "isFullModeStyle": false,
+    "textPosition": "left",
+    "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-cinza-min.png",
+    "headline": "Atividade proposta: \n Shining chrome",
+    "subhead": "Give your kitchen a cool style adding warm metallic finishes.<br>Available until January 2020.",
+    "callToActionMode": "link",
+    "callToActionText": "Go to collection",
+    "textAlignment": "center"
+    }
+  },
+
+  "flex-layout.row":{
+    "children": [
+      "info-card#rethink",
+      "flex-layout.col"
+    ]
+  },
+
+ "info-card#rethink": {
+    "props": {
+      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/utensilios-cozinha-min.png",
+      "isFullModeStyle": true,
+      "headline": "Time to rethink your kitchen",
+      "callToActionText": "Discover",
+      "textPosition": "center"
+    }
+  },
+
+  "flex-layout.col":{
+    "children": [
+      "image#electronics",
+      "image#major-appliance"
+    ]
+  },
+
+"image#electronics":
+  {
+  "props": {
+    "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/electronics_banner___25d69b49f8224b369375e68513b4d593.png",
+    "maxWidth": "100%"
+  }
+},
+"image#major-appliance":
+  {
+  "props": {
+    "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/major_appliance_banner___bb10093866a127345ddfbcca3efa5022.png",
+    "maxWidth": "100%"
+  }
+}
+
+}
